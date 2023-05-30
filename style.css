@@ -1,0 +1,443 @@
+/* RESET-CSS */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FIM-REST */
+@font-face {
+    font-family: 'mont';
+    src: url(Assets/Montserrat-VariableFont_wght.ttf);
+}
+
+/* HEADER */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    transition: 0.3s;
+}
+
+.item {
+    font: 400 30px 'mont', sans-serif;
+    color: #678471;
+}
+
+.item:hover {
+    font: 400 35px 'mont', sans-serif;
+    color: #ffa36a;
+    transition: 0.3s;
+}
+
+/* FIM HEADER */
+/* DIVISÃO */
+.divisao {
+    height: 1px;
+    background-color: #47564c;
+    margin: 15px 0;
+}
+
+/* FIM DIVISÃO */
+/* NOSSA COMIDA */
+.cozinhando {
+    width: 500px;
+    border-radius: 5px;
+}
+
+.titulo {
+    font: 500 40px 'mont', sans-serif;
+    color: #47564c;
+    margin-bottom: 20px;
+}
+
+.texto {
+    font: 300 20px 'mont', sans-serif;
+    text-align: justify;
+}
+
+#nossaComida {
+    margin: 0 50px;
+}
+
+#nossaComida .conteudo {
+    margin-left: 30px;
+}
+
+/* NOSSA EQUIPE */
+#nossaEquipe {
+    margin: 0 70px;
+
+}
+
+#nossaEquipe .conteudo {
+    margin-right: 30px;
+}
+
+.panela {
+    width: 500px;
+    border-radius: 5px;
+}
+
+/* CARDAPIO */
+.comida {
+    width: 100px;
+}
+
+.comida:hover {
+    width: 130px;
+    transition: 0.3s;
+
+}
+
+.pratos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prato {
+    border: 2px solid black;
+    width: 300px;
+    text-align: center;
+    margin: 15px 30px;
+    padding: 15px;
+}
+
+.cardapio {
+    margin: 0 70px;
+}
+
+.prato-texto {
+    font: 300 12px 'mont', sans-serif;
+    text-align: justify;
+}
+
+.prato-nome {
+    font: 600 15px 'mont', sans-serif;
+}
+
+/* RODAPE */
+#contato {
+    background-color: #678471;
+}
+
+.amm {
+    font: 600 40px 'mont', sans-serif;
+    color: white;
+}
+
+.cs {
+    font: 400 25px 'mont', sans-serif;
+    color: #ffa36a;
+}
+
+.nome {
+    text-align: center;
+}
+
+.icone {
+    width: 30px;
+    margin-right: 12px;
+}
+
+.rede {
+    display: flex;
+    text-align: center;
+}
+
+.rede-nome {
+    color: #ffffff;
+    font: 400 20px 'mont', sans-serif;
+}
+
+.endereco-descricao {
+    color: #ffffff;
+    font: 400 20px 'mont', sans-serif;
+}
+
+.endereco-nome {
+    width: 500px;
+    color: #ffffff;
+}
+
+.contatos {
+    padding: 40px;
+}
+
+/* RODADE FIM */
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 400px) {
+    .container .conteudo {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    #nossaComida .container {
+        flex-direction: column;
+    }
+
+    #nossaEquipe .container {
+        flex-direction: column-reverse;
+    }
+
+    #contato .container {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .cozinhando, .panela {
+        width: 80vw;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .item {
+        font-size: 8px;
+    }
+
+    #nossaComida, #nossaEquipe {
+        margin: 0 0 25px;
+    }
+
+    #header .container {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 40vw;
+    }
+
+    .nome, .rede, .endereco {
+        padding-bottom: 10px 
+    }
+    .amm {
+        font-size: 25px;
+    }
+
+    .cs {
+        font-size: 20px;
+    }
+
+    .rede-nome {
+        font-size: 18px;
+    }
+    
+    .endereco-descricao {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+
+    .endereco-nome {
+        font-size: 22px;
+    }
+    .endereco {
+        width: 60vw;
+    }
+    .prato {
+        margin: 15px;
+    }
+    .cardapio {
+        margin: 15;
+    }
+    .conteudo {
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 0;
+
+    }
+    #nossaComida .conteudo {
+        margin-left: 0;
+        margin: 0 15px;
+    }
+    #nossaEquipe .conteudo {
+        margin-right: 0;
+        margin: 0 15px;
+    }
+    #header .container img {
+        display: block;
+        margin: 0 30vw;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:768px) {
+    .container {
+        flex-direction: column;
+    }
+    #nossaEquipe .container {
+        flex-direction: column-reverse;
+    }
+    .logo {
+        width: 250px;
+        transition: 0.3s;
+    }
+    
+    .item {
+        font: 400 18px 'mont', sans-serif;
+        color: #678471;
+        padding: 0 12px;
+
+    }
+    .menu2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    /* FIM HEADER */
+    /* DIVISÃO */
+    .divisao {
+        height: 1px;
+        background-color: #47564c;
+        margin: 15px 0;
+    }
+    
+    /* FIM DIVISÃO */
+    /* NOSSA COMIDA */
+    .cozinhando {
+        width: 500px;
+        border-radius: 5px;
+    }
+    
+    .titulo {
+        font: 500 40px 'mont', sans-serif;
+        color: #47564c;
+        margin-bottom: 20px;
+    }
+    
+    .texto {
+        font: 300 20px 'mont', sans-serif;
+        text-align: justify;
+    }
+    
+    #nossaComida {
+        margin: 0 50px;
+    }
+    
+    #nossaComida .conteudo {
+        margin-left: 30px;
+    }
+    
+    /* NOSSA EQUIPE */
+    #nossaEquipe {
+        margin: 0 70px;
+    
+    }
+    
+    #nossaEquipe .conteudo {
+        margin-right: 30px;
+    }
+    
+    .panela {
+        width: 500px;
+        border-radius: 5px;
+    }
+    
+    /* CARDAPIO */
+    .comida {
+        width: 100px;
+    }
+    
+    .comida:hover {
+        width: 130px;
+        transition: 0.3s;
+    
+    }
+    
+    .pratos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .prato {
+        border: 2px solid black;
+        width: 300px;
+        text-align: center;
+        margin: 15px 30px;
+        padding: 15px;
+    }
+    
+    .cardapio {
+        margin: 0 70px;
+    }
+    
+    .prato-texto {
+        font: 300 12px 'mont', sans-serif;
+        text-align: justify;
+    }
+    
+    .prato-nome {
+        font: 600 15px 'mont', sans-serif;
+    }
+    
+    /* RODAPE */
+    #contato {
+        background-color: #678471;
+    }
+    
+    .amm {
+        font: 600 40px 'mont', sans-serif;
+        color: white;
+    }
+    
+    .cs {
+        font: 400 25px 'mont', sans-serif;
+        color: #ffa36a;
+    }
+    
+    .nome {
+        text-align: center;
+    }
+    
+    .icone {
+        width: 30px;
+        margin-right: 12px;
+    }
+    
+    .rede {
+        display: flex;
+        text-align: center;
+    }
+    
+    .rede-nome {
+        color: #ffffff;
+        font: 400 20px 'mont', sans-serif;
+    }
+    
+    .endereco-descricao {
+        color: #ffffff;
+        font: 400 20px 'mont', sans-serif;
+    }
+    
+    .endereco-nome {
+        width: 500px;
+        color: #ffffff;
+    }
+    
+    .contatos {
+        padding: 40px;
+    }
+}
